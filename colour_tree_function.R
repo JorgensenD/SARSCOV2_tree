@@ -3,7 +3,8 @@
 #' Edit of mcc_tree_plot allowing non-region tips to be coloured by continent.
 #' requires nexus input tree, most recent sample date and dictionary converting second element of 
 #' sequence names to continent.
-#' 
+#' Function requires the ggtree package.
+#' @importFrom ggtree "%<+%"
 #' @param nexfn Path to nexus file containing annotated MCC tree (output of treeannotator2)
 #' @param mostRecentSampleDate A character string containign the date of the most recent sample in the form 2020-03-17
 #' @param country_dictionary data dictionary to convert country names to world bank continents
